@@ -57,30 +57,21 @@ function calcularImparPar() {
 function descrescente() {
 
     /*Construa um algoritmo que recebe do usuário 5 números. Após recebê-los, retorne a lista de números em ordem decrescente. */
-    var num1 = document.querySelector('#NUM1');
-    var num2 = document.querySelector('#NUM2');
-    var num3 = document.querySelector('#NUM3');
-    var num4 = document.querySelector('#NUM4');
-    var num5 = document.querySelector('#NUM5');
 
-    var Nume1 = parseInt(num1.value);
-    var Nume2 = parseInt(num2.value);
-    var Nume3 = parseInt(num3.value);
-    var Nume4 = parseInt(num4.value);
-    var Nume5 = parseInt(num5.value);
-
-    var array = [Nume1, Nume2, Nume3, Nume4, Nume5];
-
-    if (Nume1 == null) {
-        window.alert("Preencha todos os campos");
-    } else {
-        array.sort();
-        array.reverse();
-
-        for (let i = 0; i < array.length; i++) {
-            window.alert("Ordem Descrescente: " + array[i]);
-        }
+    function decr (pr1, pr2){
+        return pr2 - pr1;
     }
+
+    var vetor = Array(  document.querySelector('#NUM1').value,
+                        document.querySelector('#NUM2').value,
+                        document.querySelector('#NUM3').value,
+                        document.querySelector('#NUM4').value, 
+                        document.querySelector('#NUM5').value,
+     );
+
+    var array = vetor;
+
+    document.getElementById("descrescenteID").innerHTML = "Ordem descrescente: " + array.sort(decr);
 
 }
 
