@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Style personalizada-->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row">
+      <div class="col alert-info boder-radius margin-top">
+        <h1>calcular o tamanho do edificio</h1>
+        <label for="altura">Altura(em metros)</label>
+        <input class="form-control" type="number" id="altura" placeholder="Altura" aria-label="default input example">
+
+        <label for="andares">Quantidade de andares</label>
+        <input class="form-control" type="number" id="andares" placeholder="Quantidade de andares"
+          aria-label="default input example">
+        <br>
+        <div class="d-grid gap-2 col-6 mx-auto offset-2">
+          <button class="btn btn-primary" type="button" onclick="calcularTamanhoEdificio()">Calcular</button>
+        </div>
+        <br>
+        <div class="alert alert-danger" role="alert" id="calculo">Resultado</div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col alert-info boder-radius margin-top">
+        <h1>imprimir o maior, o menor, e a media</h1>
+        <label for="numb1">Primeiro numero</label>
+        <input class="form-control" type="number" id="numb1" placeholder="Primeiro numero"
+          aria-label="default input example">
+
+        <label for="numb2">Segundo numero</label>
+        <input class="form-control" type="number" id="numb2" placeholder="Primeiro numero"
+          aria-label="default input example">
+
+        <label for="numb3">Terceiro numero</label>
+        <input class="form-control" type="number" id="numb3" placeholder="Primeiro numero"
+          aria-label="default input example">
+
+        <label for="numb4">Quarto numero</label>
+        <input class="form-control" type="number" id="numb4" placeholder="Primeiro numero"
+          aria-label="default input example">
+        <br>
+        <div class="d-grid gap-2 col-6 mx-auto offset-2">
+          <button class="btn btn-primary" type="button" onclick="calculaMaiorMenorMedia()">Calcular</button>
+        </div>
+        <br>
+        <div class="alert alert-danger" role="alert" id="resultado">Resultado</div>
+      </div>
+    </div>
+
+
+    <br><br>
+    <div class="row">
+      <div class="col alert-info boder-radius " style="padding-bottom: 2rem">
+        <h1>VALORES IMPARES E PARES</h1>
+        <p>numeros: 1, 3, 35, 40, 85, 123, 121, 209, 200, 305, 350</p>
+        <p>OBS: os valores são apresentados em uma caixa de dialogo</p>
+        <div class="d-grid gap-2 col-6 mx-auto offset-2">
+          <button class="btn btn-primary" type="button" onclick="calcularImparPar()">Resultado</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col alert-info boder-radius margin-top">
+        <h1>APRESENTAR NUMEROS DECRESCENTE</h1>
+
+        <label for="NUM1">Primeiro numero</label>
+        <input class="form-control" type="number" id="NUM1" placeholder="Primeiro numero"
+          aria-label="default input example">
+
+        <label for="NUM2">Segundo numero</label>
+        <input class="form-control" type="number" id="NUM2" placeholder="Segundo numero"
+          aria-label="default input example">
+
+        <label for="NUM3">Segundo numero</label>
+        <input class="form-control" type="number" id="NUM3" placeholder="Terceiro numero"
+          aria-label="default input example">
+
+        <label for="NUM4">Segundo numero</label>
+        <input class="form-control" type="number" id="NUM4" placeholder="Quarto numero"
+          aria-label="default input example">
+
+        <label for="NUM5">Segundo numero</label>
+        <input class="form-control" type="number" id="NUM5" placeholder="Quinto numero"
+          aria-label="default input example">
+        <br>
+        <div class="d-grid gap-2 col-6 mx-auto offset-2" style="padding-bottom: 2rem">
+          <button class="btn btn-primary" type="button" onclick="descrescente()">Resultado</button>
+        </div>
+        <div class="alert alert-danger" role="alert" id="apresentarDescrescente">Resultado</div>
+      </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+      <div class="col alert-info boder-radius " style="margin-bottom: 4rem;">
+        <h1>CONTAR VOGAIS</h1>
+        <input class="form-control" type="text" id="vogais" placeholder="Digite um texto"
+          aria-label="default input example">
+        <div class="d-grid gap-2 col-6 mx-auto offset-2" style="padding-bottom: 2rem; padding-top: 2rem">
+          <button class="btn btn-primary" type="button" onclick="vogais()">Resultado</button>
+        </div>
+        <div class="alert alert-danger" role="alert" id="QntVogais">Resultado</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="js/logica.js"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
