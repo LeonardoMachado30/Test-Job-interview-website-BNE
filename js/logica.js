@@ -62,7 +62,8 @@ function descrescente() {
         return pr2 - pr1;
     }
 
-    var vetor = Array(  Number(document.querySelector('#NUM1').value),
+    var vetor = Array(  
+                        Number(document.querySelector('#NUM1').value),
                         Number(document.querySelector('#NUM2').value),
                         Number(document.querySelector('#NUM3').value),
                         Number(document.querySelector('#NUM4').value), 
