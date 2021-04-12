@@ -71,16 +71,21 @@ function descrescente() {
 
     var array = [Nume1, Nume2, Nume3, Nume4, Nume5];
 
-    array.sort();
-    array.reverse();
+    if (Nume1 == null) {
+        window.alert("Preencha todos os campos");
+    } else {
+        array.sort();
+        array.reverse();
 
-    for (let i = 0; i < array.length; i++) {
-        window.alert("Ordem Descrescente: " + array[i]);
+        for (let i = 0; i < array.length; i++) {
+            window.alert("Ordem Descrescente: " + array[i]);
+        }
     }
+
 }
 
 function vogais() {
-/*Construa um algoritmo que identifique a quantidade de vogais a partir de um texto informado pelo usuário. */
+    /*Construa um algoritmo que identifique a quantidade de vogais a partir de um texto informado pelo usuário. */
 
     txtVogais = document.querySelector('input#vogais').value;
     resultVogais = document.querySelector('div#QntVogais');
