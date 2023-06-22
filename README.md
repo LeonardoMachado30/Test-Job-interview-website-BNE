@@ -8,3 +8,4 @@ Teste realizado para entrevista de emprego como estagiario na empresa BNE - Banc
 - HTML  
 - CSS
 - Javascript
+- Bootstrap
